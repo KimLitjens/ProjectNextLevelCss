@@ -1,0 +1,59 @@
+body {
+  font-family: "FontAwesome";
+}
+
+.fa-laptop-code::before {
+  content: "\f5fc";
+}
+.fa-twitter::before {
+  content: "\f099";
+}
+.fa-linkedin-in::before {
+  content: "\f0e1";
+}
+.fa-facebook-f::before {
+  content: "\f39e";
+}
+.fa-github::before {
+  content: "\f09b";
+}
+
+.social-media.blog {
+  background-color: #e17b77;
+}
+
+.social-media.facebook {
+  background-color: #3b5998;
+}
+
+.social-media.twitter {
+  background-color: #00aced;
+}
+
+.social-media.github {
+  background-color: #333;
+}
+
+.social-media.linkedin {
+  background-color: #007bb6;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+  transform: translate(190px);
+  transition-duration: 1s;
+}
+
+div {
+  width: 250px;
+  float: right;
+}
+a {
+  padding-left: 10px;
+  color: white;
+}
+
+li:hover {
+  transform: translate(20px);
+}
