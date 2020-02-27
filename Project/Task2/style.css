@@ -3,6 +3,13 @@ body {
   margin: 50px;
 }
 
+.pictureDiv {
+  position: relative;
+  background-color: rgb(44, 45, 66);
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
 .nielsGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -15,45 +22,43 @@ body {
   border-radius: 20px;
   width: 100%;
   height: 100%;
-  transition: .5s;
+  transition: 0.5s;
   opacity: 1;
 }
 
-.nielsPicture:hover, .readButton:hover + .nielsPicture {
+.readButton {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  /* transform: translate(-200px, 150px); */
+}
+/* .nielsPicture:hover, .readButton:hover + .nielsPicture {
   opacity: 0;
 }
 
 .nielsPicture:hover + .readButton, .readButton:hover{
   opacity: 1;
+} */
+
+.pictureDiv:hover .nielsPicture {
+  opacity: 0;
 }
 
-.pictureDiv {
-  background-color: rgb(44, 45, 66);
-  border-radius: 20px;
-  width: 100%;
-  height: 100%;
-} 
-
-.readButton {
-  opacity: 0;
-  width: center;
-  height: center;
-  position: absolute;
-  transform: translate(-200px, 130px);
+.pictureDiv:hover .readButton {
+  opacity: 1;
 }
 
 /* grote van mobiel  */
 @media (max-width: 650px) {
-
   .nielsGrid {
     grid-template-columns: repeat(1, 1fr);
   }
-} 
+}
 
 /* grote van tablet */
 @media screen and (max-width: 960px) and (min-width: 651px) {
-
   .nielsGrid {
     grid-template-columns: repeat(2, 2fr);
   }
-} 
+}
